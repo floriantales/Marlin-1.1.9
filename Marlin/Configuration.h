@@ -607,7 +607,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 // Calibration des moteurs :
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.3, 159.8, 798.6, 178 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.3, 159.8, 798.6, 190.5 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -615,7 +615,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 // On augmente un peu la vitesse du Z (pas trop quand même)
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 300, 300, 10, 25 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
