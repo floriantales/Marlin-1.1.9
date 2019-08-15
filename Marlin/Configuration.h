@@ -776,10 +776,10 @@
  *      O-- FRONT --+
  *    (0,0)
  */
-#define X_PROBE_OFFSET_FROM_EXTRUDER -10  // X offset: -left  +right  [of the nozzle]
+#define X_PROBE_OFFSET_FROM_EXTRUDER -24  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 0  // Y offset: -front +behind [the nozzle]
 // Pour se rapprocher du plateau il faut augmenter :
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.20   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -0.9   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -1091,9 +1091,9 @@
  * Override if the automatically selected points are inadequate.
  */
 #if ENABLED(AUTO_BED_LEVELING_3POINT) || ENABLED(AUTO_BED_LEVELING_UBL)
-  #define PROBE_PT_1_X 15
+  #define PROBE_PT_1_X 20
   #define PROBE_PT_1_Y 140
-  #define PROBE_PT_2_X 15
+  #define PROBE_PT_2_X 20
   #define PROBE_PT_2_Y 20
   #define PROBE_PT_3_X 140
   #define PROBE_PT_3_Y 20
