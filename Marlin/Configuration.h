@@ -881,12 +881,12 @@
 
 // The size of the print bed
 // Obligation de reduire : vitre + pinces
-#define X_BED_SIZE 180
-#define Y_BED_SIZE 170
+#define X_BED_SIZE 205
+#define Y_BED_SIZE 180
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 // On repositionne les limites du plateau par rapport aux endstops
-#define X_MIN_POS -18
+#define X_MIN_POS -6
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
@@ -1132,8 +1132,8 @@
 
 // Manually set the home position. Leave these undefined for automatic settings.
 // For DELTA this is the top-center of the Cartesian print volume.
-#define MANUAL_X_HOME_POS -20
-#define MANUAL_Y_HOME_POS -22
+#define MANUAL_X_HOME_POS -6
+#define MANUAL_Y_HOME_POS -10
 //#define MANUAL_Z_HOME_POS 0
 
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
@@ -1155,7 +1155,7 @@
 
 // Homing speeds (mm/m)
 #define HOMING_FEEDRATE_XY (50*60)
-#define HOMING_FEEDRATE_Z  (4*60)
+#define HOMING_FEEDRATE_Z  (10*60)
 
 // @section calibrate
 
@@ -1263,7 +1263,7 @@
 // Preheat Constants
 // Les valeurs de préchauffage par défaut seront les suivantes :
 #define PREHEAT_1_TEMP_HOTEND 190
-#define PREHEAT_1_TEMP_BED     50
+#define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_TEMP_HOTEND 240
